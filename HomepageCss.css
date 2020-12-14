@@ -27,6 +27,7 @@ header{
 .logo{
     cursor: pointer;
     height: 80px;
+    
 }
 .nav_links{
     list-style: none;
@@ -54,3 +55,36 @@ button:hover{
 }
 
 /* perfundimi i header */
+
+
+/* footeri */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    
+}
+
+
+h3,h4, h5{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #edf0f1;
+    
+}
+.sec_logo{
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.inner-right-footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+
+}
+
+/* perfundimi i footerit */
