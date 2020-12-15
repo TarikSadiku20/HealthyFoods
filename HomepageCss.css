@@ -56,6 +56,24 @@ button:hover{
 
 /* perfundimi i header */
 
+/* main */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background-image{
+    height: 1000px;
+    width: 1500px;
+    border-radius: 50px;
+    
+}
+
+
+
+/* perfundimi i main */
+
+
 
 /* footeri */
 footer{
@@ -65,15 +83,12 @@ footer{
     padding: 30px 10%;
     
 }
-
-
 h3,h4, h5{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 13px;
     color: #edf0f1;
-    
-}
+    }
 .sec_logo{
     height: 30px;
     border: none;
