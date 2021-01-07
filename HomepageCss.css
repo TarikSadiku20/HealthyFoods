@@ -5,7 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+    
 }
 
 
@@ -22,6 +22,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    background-color: #24252A;
+    
 }
 
 .logo{
@@ -58,15 +60,28 @@ button:hover{
 
 /* main */
 main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    
 }
 .background-image{
     height: 1000px;
     width: 1500px;
     border-radius: 50px;
     
+}
+#showcase{
+    background-image: url("images/backgroundimage.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #926239;
 }
 
 
@@ -81,6 +96,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    background-color: #24252A;
     
 }
 h3,h4, h5{
