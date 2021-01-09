@@ -60,7 +60,7 @@ button:hover {
 
 main {
   width: 100%;
-  background-image: url("./images/backgroundimage.jpg");
+  background-image: url("../images/backgroundimage.jpg");
   padding: 5% 0;
 }
 
