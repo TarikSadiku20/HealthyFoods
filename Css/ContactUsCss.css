@@ -115,9 +115,14 @@ form {
 #contact-button {
   padding: 1.5em 2em;
   color: white;
-  background-color: red;
   border-radius: 50px;
   border: none;
+  background-color: rgba(0, 136, 139, 1);
+  transition: all 0.3s ease 0s;
+}
+#contact-button:hover{
+  background-color:green;
+
 }
 
 /* perfundimi i main */
