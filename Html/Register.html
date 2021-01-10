@@ -5,30 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In/Register</title>
-    <link rel="stylesheet" href="../Css/LogInCss.css">
+    <link rel="stylesheet" href="../Css/RegisterCss.css">
     <script defer src="../Js/RegisterValidation.js"></script>
 </head>
 <body>
+
+    
+    <main> 
     <div id="error"></div>
     <form id="form" action="/" method="GET">
-        <div>
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text">
+        <div class="forminputs">
+            <label for="name"></label>
+            <input id="name" name="name" type="text" placeholder="Name">
+        
+        
+            <label for="surname"></label>
+            <input id="surname" name="surname" type="text" placeholder="Surname">
+    
+        
+            <label for="email"></label>
+            <input id="email" name="email" type="email" placeholder="Email">
+        
+        
+            <label for="password"></label>
+            <input id="password" name="password" type="password" placeholder="Password">
         </div>
-        <div>
-            <label for="surname">Surname</label>
-            <input id="surname" name="surname" type="text">
+
+
+        <div id="buttoncontrols">
+            <button type="submit">Submit</button>
+            <p><a href="../Html/LogIn.html"> Log In</a></p>
         </div>
-        <div>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email">
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input id="password" name="password" type="password">
-        </div>
-        <button type="submit">Submit</button>
     </form>
+    </main>
     
 </body>
 </html>

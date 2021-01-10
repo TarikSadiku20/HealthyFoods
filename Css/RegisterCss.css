@@ -1,88 +1,101 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
-body{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-    background: #000;
+main{
+ font-family: 'Montserrat', sans-serif;
+  background-image: url("../images/backgroundimage1.jpg");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  
 }
 
-.background{
-    background: url("../images/backgroundimage1.jpg") no-repeat;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-}
-.text, .box{
-    margin-top: 45vh;
-}
-.text{
-    margin-left: 10%;
-    font-weight: 300px;
-}
-.box{
-    margin-left: 25%;
-}
-.text h1{
-    font-size: 70px;
-    color: tan;
-    font-weight: 500;
+#form{
+    padding: 100px;
+    width: 60%;
+    height: 70%;
+    margin-top: 10px;
+    background-color: rgb(164, 167, 177);
+    border-radius: 15px;
     
+ 
+ 
 }
-.text p{
-    font-size: 20px;
-    color: #fff;
-    font-weight: 300;
-    
-}
-.text p a {
-    color: rgb(197, 45, 18);
-    font-weight: 700;
-    transition: all 0.3s ease 0s;
-}
-.text p a:hover{
-    color: darkred;
-}
-.form{
-    background: transparent;
-    box-sizing: border-box;
-    color: #fff;
+
+.forminputs{
     display: flex;
     flex-direction: column;
-    width: 250px;
+    margin-bottom: 10px;
+   
+    
 }
 input{
-    margin: 20px 0px;
+    margin-bottom: 30px;
     padding: 10px;
-    background: transparent;
-    padding: 9px 25px;
-    background-color:rgb(192, 183, 141);
-    border: none;
-    border-radius: 50px;
+    border-radius: 10px;
+    background-color: tan;
     transition: all 0.3s ease 0s;
-    font-family: "Montserrat", sans-serif;
 }
 input:hover{
-    color: white;
+    background-color: rgb(214, 166, 104);
 }
-.username,.surname, .password, .email{
-    border-bottom: 1px solid #fff;
+
+#error{
+    border: 3px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(59, 3, 3);
+    border-color: rgb(161, 9, 9);
+    background: transparent;
+
 }
-.button{
-    padding: 9px 25px;
+
+#buttoncontrols{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+button{
+    padding: 15px 30px;
     background-color: rgba(0, 136, 139, 1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
-.button:hover{
+button:hover{
     background-color:green;
 }
+
+p{
+    padding: 10px 20px;
+    background-color: rgba(0, 136, 139, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: inherit;
+    font-size: 14px;
+    
+    
+}
+p:hover{
+    background-color:green;
+}
+a {
+    color: inherit;
+}
+

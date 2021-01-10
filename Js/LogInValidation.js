@@ -15,10 +15,7 @@ form.addEventListener('submit', (e) =>{
          message.push("Password is required")
      }
 
-     if(password.value.length <= 6){
-         message.push("Password must be longer");
-
-     }
+     
 
 
      if(message.length > 0){

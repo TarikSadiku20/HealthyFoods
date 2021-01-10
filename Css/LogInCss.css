@@ -4,6 +4,96 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 
+}
+
+main{
+ font-family: 'Montserrat', sans-serif;
+  background-image: url("../images/backgroundimage1.jpg");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+#form{
+    padding: 100px;
+    width: 50%;
+    height: 60%;
+    margin-top: 10px;
+    background-color: rgb(164, 167, 177);
+    border-radius: 15px;
+    
+ 
+ 
+}
+
+.forminputs{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+   
+    
+}
+input{
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: tan;
+    transition: all 0.3s ease 0s;
+}
+input:hover{
+    background-color: rgb(214, 166, 104);
+}
+
+#error{
+    border: 3px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(59, 3, 3);
+    border-color: rgb(161, 9, 9);
+    background: transparent;
+
+}
+
+#buttoncontrols{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+button{
+    padding: 15px 30px;
+    background-color: rgba(0, 136, 139, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color:green;
+}
+
+p{
+    padding: 10px 20px;
+    background-color: rgba(0, 136, 139, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: inherit;
+    font-size: 15px;
+    
+}
+p:hover{
+    background-color:green;
+}
+a {
+    color: inherit;
 }
 
