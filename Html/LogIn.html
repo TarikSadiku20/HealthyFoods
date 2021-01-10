@@ -5,30 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In/Register</title>
     <link rel="stylesheet" href="../Css/LogInCss.css">
+    <script defer src="../Js/LogInValidation.js"></script>
 </head>
 <body>
-    <div class="background">
-        <div class="text">
-            <h1> Login</h1>
-
-            <p> <a href="../Html/Register.html">Register</a></p>
-
+    <div id="error"></div>
+    <form id="form" action="/" method="GET">
+        <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email">
         </div>
-        <div class="box">
-            <form class="form">
-                <input type="text" class="username" placeholder="Username" required>
-                <input type="text" class="surname" placeholder="Surname" required>
-                <input type="password" class="password" placeholder="Password" required>
-                <input type="submit" class="button" value="Login">
-            </form>
-
+        <div>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password">
         </div>
-    </div>
-
-
-
-
-    <script src="../Js/LogInValidation.js"></script>
+        <button type="submit">Submit</button>
+    </form>
     
 </body>
 </html>

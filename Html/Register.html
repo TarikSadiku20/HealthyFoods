@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,31 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In/Register</title>
     <link rel="stylesheet" href="../Css/LogInCss.css">
-    <script src="../Js/RegisterValidation.js">
-    </script>
+    <script defer src="../Js/RegisterValidation.js"></script>
 </head>
 <body>
-    <div class="background">
-        <div class="text">
-            <h1> Register </h1>
-
-            <p> <a href="../Html/LogIn.html">Log In</a></p>
-
+    <div id="error"></div>
+    <form id="form" action="/" method="GET">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text">
         </div>
-        <div class="box">
-            <form class="form">
-                <input type="text" class="username" placeholder="Username" required>
-                <input type="text" class="surname" placeholder="Surname" required>
-                <input type="email" class="email" placeholder="Email" required>
-                <input type="password" class="password" placeholder="Password" required>
-                <button type="submit">Submit</button>
-            </form>
-
+        <div>
+            <label for="surname">Surname</label>
+            <input id="surname" name="surname" type="text">
         </div>
-    </div>
-
-
-    
+        <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
     
 </body>
 </html>
