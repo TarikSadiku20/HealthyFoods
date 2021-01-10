@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); /* fonti */
+/* header
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252A;
+    
+}
+
+.logo{
+    cursor: pointer;
+    height: 80px;
+    
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+    color: darkred;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 139, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color:green;
+}
+
+/* perfundimi i headerit 
+*/
+
+/* fillimi i main
+*/
+
+main{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #24252A;
+    
+}
+
+.banner-img{
+    background-image: url("../images/backgroundimage1.jpg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 70vh;
+    filter: blur(2px);
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 45%;
+    padding: 40px 0;
+    text-align: center;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    color: black;
+    font-weight: bold;
+    border: 10px inset #fff;
+}
+.banner-text p{
+    padding: 0 8%;
+    font-family: "Montserrat", sans-serif;
+}
+.secondsection{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(209, 200, 200);
+    padding: 50px;
+    margin-top: 15px;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    
+    
+    
+}
+.secondsection div{
+    border: 3px solid rgb(102, 95, 95);
+    padding: 15px;
+    
+}
+
+
+
+
+/* footeri */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252A;
+    
+}
+h3,h4, h5{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #edf0f1;
+    }
+.sec_logo{
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.inner-right-footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+
+}
+
+/* perfundimi i footerit */
