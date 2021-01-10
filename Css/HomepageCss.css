@@ -67,7 +67,7 @@ button:hover{
     
 }
 #showcase{
-    background-image: url("../images/backgroundimage.jpg");
+   
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -78,7 +78,30 @@ button:hover{
     text-align: center;
     padding: 0 20px;
     font-family: "Montserrat", sans-serif;
-    color: #926239;
+    color: #140a01;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide{
+    0%{
+        background-image: url("../images/backgroundimage.jpg");
+    }
+    20%{
+        background-image: url("../images/backgroundimage2.jpg");
+    }
+    40%{
+        background-image: url("../images/backgroundimage3.jpg");
+    }
+    60%{
+        background-image: url("../images/backgroundimage.jpg");
+    }
+    80%{
+        background-image: url("../images/backgroundimage2.jpg");
+    }
+    100%{
+        background-image: url("../images/backgroundimage3.jpg");
+    }
+    
 }
 
 
