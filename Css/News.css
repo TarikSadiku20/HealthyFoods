@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"); /* fonti */
+/* header
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
+  font-family: "Montserrat", sans-serif;
+}
+
+li,
+a,
+button {
+  font-weight: 500;
+  font-size: 13px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+  height: 80px;
+}
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+  color: darkred;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 139, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: green;
+}
+
+/* perfundimi i header */
+
+/* main */
+
+main {
+  width: 100%;
+  background-image: url("./images/backgroundimage.jpg");
+  padding: 5% 0;
+  overflow: hidden;
+}
+
+.formContainer {
+  width: 80%;
+  margin: 0 10%;
+  background-color: rgba(255, 255, 255, 0.815);
+  padding: 10% 5%;
+}
+
+.formContainer * {
+  background-color: rgba(255, 255, 255, 0.062);
+}
+
+
+.slider { 
+  width: 100%; 
+  height: 650px; 
+  border-radius: 10px; 
+  overflow: hidden; 
+} 
+
+.imgs_slides { 
+  height: 610px; 
+  display: flex; 
+} 
+
+/* We have to set display: none; 
+If not, all of our images would  
+be visible at the same time */
+.imgs_slides input { 
+  display: none; 
+} 
+
+.slide { 
+  width: 100%; 
+  transition: 2s; 
+} 
+
+.slide img { 
+  width: 1100px; 
+  height: 480px; 
+} 
+
+/* css for slide navigation */
+.navigation { 
+  position: relative; 
+  width: 100%; 
+  margin-top: -85px; 
+  display: flex; 
+  justify-content: center; 
+} 
+
+.navigation-btn { 
+  border: 2px solid #de6a23; 
+  padding: 5px; 
+  border-radius: 10px; 
+  cursor: pointer; 
+  transition: 1s; 
+} 
+
+.navigation-btn:not(:last-child) { 
+  margin-right: 40px; 
+} 
+
+.navigation-btn:hover { 
+  background: #de6a23; 
+} 
+
+/* The checked attribute is used with 
+reference to <input type="radio">,  
+when radio button is clicked the  
+class will shift w.r.t  left margin  
+as mentioned which results in image  
+slider */
+#radio1:checked~.first { 
+  margin-left: 0; 
+} 
+
+#radio2:checked~.first { 
+  margin-left: -100%; 
+} 
+
+#radio3:checked~.first { 
+  margin-left: -200%; 
+} 
+
+#radio4:checked~.first { 
+  margin-left: -300%; 
+} 
+
+.row {
+    display: table;
+    
+}
+
+.work-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+    margin-right:25px;
+    padding: 5px;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    float: left;
+}
+
+#contact-button {
+  padding: 1.5em 2em;
+  color: white;
+  background-color: red;
+  border-radius: 50px;
+  border: none;
+}
+
+/* perfundimi i main */
+
+/* footeri */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #edf0f1;
+}
+.sec_logo {
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.inner-right-footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5px;
+}
+
+/* perfundimi i footerit */
