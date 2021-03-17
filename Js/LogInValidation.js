@@ -20,8 +20,8 @@ form.addEventListener('submit', (e) =>{
 
      if(message.length > 0){
 
-        e.preventDefault();
-
+        
+         e.preventDefault();
         errorElement.innerText = message.join(', ');
 
 
