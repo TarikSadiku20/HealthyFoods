@@ -1,3 +1,14 @@
+<?php
+
+require './controller/ContactController.php';
+$user = new ContactController;
+if(isset($_POST['submit'])) {
+    $user->store($_POST);
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,26 +25,26 @@
         <main>
             <div class="formContainer">
                 <h2>Start Getting Results</h2>
-                <form action="">
+                <form action="" method="POST">
                     <div class="form-group">
                         <label for="first-name">First Name</label>
                         <br />
-                        <input type="text" name='first-name' id="first-name">
+                        <input type="text" name='firstname' id="first-name">
                     </div>
                     <div class="form-group">
                         <label for="last-name">Last Name</label>
                         <br />
-                        <input type="text" name="last-name" id="last-name">
+                        <input type="text" name="lastname" id="last-name">
                     </div>
                     <div class="form-group">
                         <label>Phone</label>
                         <br />
-                        <input type="text">
+                        <input type="text" name="phone">
                     </div>
                     <div class="form-group">
                         <label>Email</label>
                         <br />
-                        <input type="text">
+                        <input type="text" name="email">
                     </div>
                     
 
@@ -52,9 +63,9 @@
                     <div class="form-group form-select">
                         <label>Please tell us more</label>
                         <br />
-                        <textarea rows="5" id="tellus" option value="null">Na shkruaj...</textarea>
+                        <textarea rows="5" id="tellus" name="tellus" option value="null">Na shkruaj...</textarea>
                     </div>
-                    <button id="contact-button">Send message</button>
+                    <button id="contact-button" name="submit" value="submit">Send message</button>
 
                 </form>
             </div>

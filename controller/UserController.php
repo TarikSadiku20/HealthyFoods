@@ -17,10 +17,11 @@ class UserController{
 
         return $query->fetchAll();
     }
+    
 
     public function store($request)
     {
-        isset($request['is_admin']) ? $isAdmin = 1 : $isAdmin = 0;
+        
         $password = password_hash($request['password'], PASSWORD_DEFAULT);
 
         $query = $this->db->pdo->prepare('INSERT INTO user (name, surname, email, password) VALUES (:name, :surname, :email, :password)');
@@ -32,6 +33,14 @@ class UserController{
         $query->execute();
 
         return header('Location: homepage.php');
+    }
+
+    public function destroy($id)
+    {
+        $query = $this->db->pdo->prepare('DELETE FROM user WHERE id = :id');
+        $query->execute(['id' => $id]);
+
+        return header('Location: Homepage.php');
     }
 
 

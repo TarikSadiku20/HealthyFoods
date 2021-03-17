@@ -1,4 +1,9 @@
+<?php
 
+session_start();
+
+
+?>
     <!DOCTYPE html>
 
 
@@ -28,15 +33,17 @@
                     <li><a href="./News.php"> News </a></li>
                     <li><a href="./AboutUs.php"> About Us </a></li>
                     <li><a href="./ContactUs.php"> Contact Us </a></li>
+                    <li><a href="./tracker.php"> Track Calories </a></li>
                 </ul>
             </nav>
             <?php if(isset($_SESSION['name'])): ?>
-               
-                <h2> Welcome, <a href="#"><?php echo $_SESSION['name']; ?> </a> </h2>
-                <li><a href="logout.php"> Logout </a> </li>
-                <?php else: ?>
-                    <li><a class="login" href="./LogIn.php"><button>LogIn/Register</button></a></li>
-                <?php endif; ?> 
+        <h1> <a href="#"><?php echo $_SESSION['name']; ?></a></h1>
+        
+        
+    <?php else: ?>
+        <button><li><a href="LogIn.php">Login</a></li></button>
+        <button><li><a href="Register.php">Register</a></li></button>
+    <?php endif; ?>
                
                     
         </header>
