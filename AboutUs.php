@@ -18,7 +18,7 @@
         <div class="about-section">
                 
                     <div class="box" id="1">
-                        <img src="../images/tarik.jpg" alt="" class="box-img">
+                        <img src="/images/tarik.jpg" alt="" class="box-img">
                         <h1>
                       Tarik Sadiku</h1>
                       <h5>
@@ -30,7 +30,7 @@
                       </p>
                     </div>
                     <div class="box" id="2">
-                      <img src="../images/pic.jpeg" alt="" class="box-img">
+                      <img src="/images/pic.jpeg" alt="" class="box-img">
                         <h1>
                       Arlind Kozmaqi</h1>
                       <h5>
